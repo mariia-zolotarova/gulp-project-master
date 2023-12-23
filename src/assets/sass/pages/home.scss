@@ -1,0 +1,27 @@
+.home {
+    .hero {
+        padding: 127rem 0;
+
+        &__title {
+            max-width: 710rem;
+        }
+    }
+
+    .carusel {
+
+        display: flex;
+        gap: 32rem;
+        overflow-x: scroll;
+
+
+        &__item {
+            width: 544rem;
+            flex-shrink: 0;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+}

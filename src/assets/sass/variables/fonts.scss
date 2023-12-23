@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:wght@400;500&display=swap');
+// font-family: 'Lato', sans-serif; 400/700
+// font-family: 'Red Hat Display', sans-serif; 400/500
+
+:root {
+    // Font Family
+
+    --main-font: 'Red Hat Display', sans-serif;
+    --sub-font: 'Lato', sans-serif;
+
+
+    //Text Fonts
+
+    --text-font: 400 19rem/32rem var(--sub-font);
+
+    --Heading-H1: 400 48rem/64rem var(--main-font);
+    --Heading-H6: 400 16rem/normal var(--main-font);
+    --Heading-H8: 400 13rem/normal var(--sub-font);
+
+}
+
+.Heading-H1 {
+    font: var(--Heading-H1)
+}
+
+.Heading-H6 {
+    font: var(--Heading-H6)
+}
+
+.Heading-H8 {
+    font: var(--Heading-H8)
+}
+
+//Text
+
+.text-font {
+    font: var(--text-font);
+}
