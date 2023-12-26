@@ -44,4 +44,50 @@
         }
     }
 
+    .latest-post__container {
+        padding-bottom: 127rem;
+        display: flex;
+        flex-direction: column;
+
+        &__heading {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            padding-bottom: 40rem;
+
+            &__more {
+                text-decoration: none;
+                color: var(--Gray-500);
+            }
+        }
+
+        &__posts {
+            display: flex;
+            flex-direction: row;
+            gap: 35rem;
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                gap: 24rem;
+
+                &__description {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font: var(--Heading-H9);
+                    color: var(--Gray-500);
+                }
+
+                &__title {
+                    min-height: 60rem;
+                }
+
+                &__text {
+                    color: var(--Gray-500);
+                }
+            }
+        }
+    }
+
 }
