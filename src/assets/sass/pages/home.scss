@@ -24,4 +24,24 @@
         }
     }
 
+    .info__container {
+        padding: 127rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        &__title {
+            max-width: 430rem;
+            font: var(--Heading-H3);
+        }
+
+        &__text {
+            max-width: 480rem;
+            font: var(--Heading-H4);
+            color: var(--Gray-700);
+            display: flex;
+            flex-direction: column;
+            gap: 20rem;
+        }
+    }
+
 }
