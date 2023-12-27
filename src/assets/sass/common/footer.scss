@@ -43,3 +43,26 @@
     }
 
 }
+
+@media screen and (max-width: 320px) {
+    .footer {
+        margin: 13px;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__links {
+            padding: 40rem 0;
+        }
+
+        &__copyright-text {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+}

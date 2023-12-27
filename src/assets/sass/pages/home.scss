@@ -64,12 +64,14 @@
         &__posts {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             gap: 35rem;
 
             &__item {
                 display: flex;
                 flex-direction: column;
                 gap: 24rem;
+                max-width: 350rem;
 
                 &__description {
                     display: flex;
@@ -89,5 +91,32 @@
             }
         }
     }
+}
 
+@media screen and (max-width: 320px) {
+    .home {
+        margin: 16px;
+
+        .info__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero__title {
+            font: var(--Heading-H2);
+        }
+
+        .carusel {
+            display: flex;
+            gap: 10rem;
+        }
+
+        .carusel__item {
+            max-width: 257rem;
+        }
+
+        .latest-post__container__posts__item {
+            max-width: 290rem;
+        }
+    }
 }

@@ -9,6 +9,7 @@
 
     &__nav {
         display: flex;
+
         gap: 16rem;
     }
 
@@ -42,5 +43,30 @@
         &::after {
             background-color: var(--Base-Black);
         }
+    }
+}
+
+@media screen and (min-width: 321px) {
+
+    .header__burger {
+        display: none;
+    }
+
+    .header__nav {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        margin: 13px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
     }
 }
