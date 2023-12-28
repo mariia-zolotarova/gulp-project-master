@@ -48,26 +48,28 @@
             </section>
             <section class="form">
                 <div class="container contact__container">
-                    <h3 class="Heading-H3">Contact information</h3>
+                    <h3 class="Heading-H3 contact__container__title">Contact information</h3>
                     <p class="Heading-H6">486 Rahi street, Berlin .98 <br>Germany </p>
                     <div class="contact__container__phone">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                        <svg class="contact__container__phone__icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="21" viewBox="0 0 20 21" fill="none">
                             <path
                                 d="M15.5541 20.3688C13.7167 20.3672 11.9081 19.9149 10.2879 19.0518L9.78795 18.7751C6.33356 16.925 3.50154 14.1038 1.64429 10.6626L1.36654 10.1645C0.477536 8.54135 0.00791893 6.72331 6.98594e-07 4.87425V4.13273C-0.000468563 3.54278 0.23549 2.97705 0.655493 2.56114L2.53309 0.690719C2.71543 0.507659 2.97283 0.419425 3.22964 0.451946C3.48646 0.484467 3.71351 0.634047 3.84407 0.856732L6.34383 5.12881C6.59662 5.56364 6.52363 6.11355 6.16607 6.46798L4.06628 8.55975C3.8919 8.73156 3.85126 8.99695 3.96628 9.21274L4.35514 9.9432C5.75171 12.5202 7.8762 14.6327 10.4657 16.0193L11.1989 16.4177C11.4155 16.5323 11.6819 16.4918 11.8544 16.3181L13.9542 14.2263C14.31 13.8702 14.862 13.7974 15.2985 14.0493L19.587 16.5395C19.8105 16.6695 19.9607 16.8957 19.9933 17.1515C20.026 17.4074 19.9374 17.6638 19.7537 17.8454L17.8761 19.7158C17.4585 20.1342 16.8906 20.3693 16.2984 20.3688H15.5541Z"
                                 fill="#7B7B7B" />
                         </svg>
-                        <p class="Heading-H6">+48 601 366 816</p>
+                        <p class="Heading-H6"> +48 601 366 816</p>
                     </div>
                     <div class="contact__container__mail">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
+                        <svg class="contact__container__mail__icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="17" viewBox="0 0 20 17" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M2 0.25H18C19.1046 0.25 20 1.142 20 2.24234V14.1964C20 15.2967 19.1046 16.1887 18 16.1887H2C0.89543 16.1887 0 15.2967 0 14.1964V2.24234C0 1.142 0.89543 0.25 2 0.25ZM11.6499 11.6562L17.9999 7.22321V5.13123L10.6499 10.2616C10.2591 10.5318 9.74081 10.5318 9.34994 10.2616L1.99994 5.13123V7.22321L8.34994 11.6562C9.34089 12.3463 10.659 12.3463 11.6499 11.6562Z"
                                 fill="#7B7B7B" />
                         </svg>
-                        <p class="Heading-H6">company@support.com</p>
+                        <p class="Heading-H6"> company@support.com</p>
                     </div>
 
-                    <h3 class="Heading-H3">Follow Us</h3>
+                    <h3 class="Heading-H3 contact__container__title">Follow Us</h3>
                     <div class="contact__container__links">
                         <svg xmlns="http://www.w3.org/2000/svg" width="136" height="19" viewBox="0 0 136 19"
                             fill="none">
@@ -88,12 +90,14 @@
                 </div>
                 <div class="container">
                     <form class="form__container" action="">
-                        <label for="name">Name*</label>
-                        <input type="text" id="name" name="name" placeholder="Walter Moss" required>
-                        <label for="email">Email*</label>
-                        <input type="email" id="email" name="email" placeholder="Info@manifest.com" required>
+                        <label class="form__container__label" for="name">Name*</label>
+                        <input class="form__container__input" type="text" id="name" name="name"
+                            placeholder="Walter Moss" required>
+                        <label class="form__container__label" for="email">Email*</label>
+                        <input class="form__container__input" type="email" id="email" name="email"
+                            placeholder="Info@manifest.com" required>
 
-                        <select name="reason" id="reason">
+                        <select class="form__container__select" name="reason" id="reason">
                             <option value="0">Reason for contact</option>
                             <option value="1">Want to know more</option>
                             <option value="2">Interested</option>
@@ -101,11 +105,12 @@
                             <option value="3">Bug</option>
                         </select>
 
-                        <label for="message">Message*</label>
-                        <input type="text" id="message" name="message" placeholder="Hi there ..." required>
+                        <label class="form__container__label" for="message">Message*</label>
+                        <input class="form__container__input" type="text" id="message" name="message"
+                            placeholder="Hi there ..." required>
 
-                        <button>Send <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12"
-                                fill="none">
+                        <button class="form__container__button">Send <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                height="12" viewBox="0 0 20 12" fill="none">
                                 <path
                                     d="M19.5303 6.53033C19.8232 6.23744 19.8232 5.76256 19.5303 5.46967L14.7574 0.6967C14.4645 0.403807 13.9896 0.403807 13.6967 0.6967C13.4038 0.989594 13.4038 1.46447 13.6967 1.75736L17.9393 6L13.6967 10.2426C13.4038 10.5355 13.4038 11.0104 13.6967 11.3033C13.9896 11.5962 14.4645 11.5962 14.7574 11.3033L19.5303 6.53033ZM-6.33254e-08 6.75L19 6.75L19 5.25L6.33254e-08 5.25L-6.33254e-08 6.75Z"
                                     fill="white" />

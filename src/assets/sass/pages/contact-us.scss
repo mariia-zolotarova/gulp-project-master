@@ -24,6 +24,30 @@
         .contact__container {
             display: flex;
             flex-direction: column;
+            gap: 21rem;
+            color: var(--Gray-700);
+
+            &__title {
+                margin-bottom: 3rem;
+                color: var(--Base-Black);
+            }
+
+            &__phone,
+            &__mail {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                &__icon {
+                    margin: 9rem;
+                }
+            }
+
+            &__mail {
+                margin-bottom: 70rem;
+            }
+
+
         }
 
         .form__container {
@@ -39,18 +63,75 @@
                 border-bottom: 1px solid var(--Base-Black);
             }
 
-            label,
-            select,
-            button {
+            &__label,
+            &__select,
+            &__button {
                 margin-top: 50rem;
             }
 
-            button {
+            &__button {
                 max-width: 136rem;
                 padding: 8rem 36rem;
                 background-color: var(--Gray-700);
                 color: var(--Base-White);
             }
         }
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    //     .info__container {
+    //         display: flex;
+    //         flex-direction: column;
+    //     }
+
+    //     .hero__title {
+    //         font: var(--Heading-H2);
+    //     }
+
+    //     .carusel {
+    //         display: flex;
+    //         gap: 10rem;
+    //     }
+
+    //     .carusel__item {
+    //         max-width: 257rem;
+    //     }
+
+    //     .latest-post__container__posts__item {
+    //         max-width: 290rem;
+    //     }
+    // }
+
+    .contact-us {
+        margin: 0 16rem;
+
+        .hero {
+
+            &__container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__text {
+                max-width: 280rem;
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+
+            .contact__container,
+            .form__container {
+                max-width: 280rem;
+            }
+
+            .contact__container {
+                margin-left: 0;
+            }
+        }
+
     }
 }
