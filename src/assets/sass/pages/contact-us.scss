@@ -68,42 +68,11 @@
             &__button {
                 margin-top: 50rem;
             }
-
-            &__button {
-                max-width: 136rem;
-                padding: 8rem 36rem;
-                background-color: var(--Gray-700);
-                color: var(--Base-White);
-            }
         }
     }
 }
 
 @media screen and (max-width: 320px) {
-
-    //     .info__container {
-    //         display: flex;
-    //         flex-direction: column;
-    //     }
-
-    //     .hero__title {
-    //         font: var(--Heading-H2);
-    //     }
-
-    //     .carusel {
-    //         display: flex;
-    //         gap: 10rem;
-    //     }
-
-    //     .carusel__item {
-    //         max-width: 257rem;
-    //     }
-
-    //     .latest-post__container__posts__item {
-    //         max-width: 290rem;
-    //     }
-    // }
-
     .contact-us {
         margin: 0 16rem;
 

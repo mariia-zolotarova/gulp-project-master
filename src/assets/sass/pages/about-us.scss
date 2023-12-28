@@ -1,0 +1,55 @@
+.about-us {
+    padding: 127rem 0;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .hero__container {
+            &__title {
+                color: var(--Base-Black);
+                padding-bottom: 39rem;
+            }
+
+            &__text {
+                padding-bottom: 19rem;
+            }
+
+            color: var(--Gray-700);
+        }
+
+        .description__container {
+            max-width: 540rem;
+            display: flex;
+            flex-direction: column;
+            gap: 30rem;
+            color: var(--Gray-700);
+            letter-spacing: 0.95px;
+
+            &__button {
+                margin-top: 45rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about-us {
+        margin: 0 16rem;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+
+            .hero__container,
+            .description__container {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+        }
+
+    }
+}
