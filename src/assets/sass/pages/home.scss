@@ -93,7 +93,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     .home {
         margin: 16px;
 
@@ -116,7 +116,7 @@
         }
 
         .latest-post__container__posts__item {
-            max-width: 290rem;
+            max-width: 100%;
         }
     }
 }
