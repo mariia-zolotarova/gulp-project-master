@@ -3,8 +3,8 @@
     padding-bottom: 79rem;
 
     .hero {
-        &__container {
 
+        &__container {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -42,7 +42,8 @@
 
 @media screen and (max-width: 480px) {
     .works {
-        margin: 0 16rem;
+        margin: 16rem;
+        padding: 60rem 0;
 
         .hero {
             &__container {

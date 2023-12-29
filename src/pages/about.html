@@ -25,14 +25,23 @@
                     <a class="header__nav-link" href="@@webRoot/pages/blog.html">Blog</a>
                     <a class="header__nav-link" href="@@webRoot/pages/contact.html">Contact</a>
                 </nav>
-                <svg class="header__burger" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                    viewBox="0 0 32 32" fill="none">
+                <svg class="header__burger menu-btn" id="burger-btn" xmlns="http://www.w3.org/2000/svg" width="32"
+                    height="32" viewBox="0 0 32 32" fill="none">
                     <line x1="4" y1="8.5" x2="28" y2="8.5" stroke="black" />
                     <line x1="4" y1="15.5" x2="28" y2="15.5" stroke="black" />
                     <line x1="4" y1="22.5" x2="28" y2="22.5" stroke="black" />
                 </svg>
             </div>
         </header>
+        <nav class="mobile-menu" id="mobile-menu">
+            <ul>
+                <a class="mobile-menu__nav-link" href="/">Home</a>
+                <a class="mobile-menu__nav-link" href="@@webRoot/pages/about.html">About</a>
+                <a class="mobile-menu__nav-link" href="@@webRoot/pages/works.html">Works</a>
+                <a class="mobile-menu__nav-link" href="@@webRoot/pages/blog.html">Blog</a>
+                <a class="mobile-menu__nav-link" href="@@webRoot/pages/contact.html">Contact</a>
+            </ul>
+        </nav>
 
 
         <main class="about-us">
@@ -95,8 +104,9 @@
 
 
     <!--Обовязково додавати потрібно для JS -->
-    <script> var exports = {}; </script>
+    <!-- <script> var exports = {}; </script> -->
     <script src="@@webRoot/js/index.js"></script>
+    <script src="@@webRoot/js/header.js"></script>
 </body>
 
 </html>
