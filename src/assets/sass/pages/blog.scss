@@ -122,5 +122,16 @@
             }
         }
 
+        .post__container {
+            display: flex;
+            flex-direction: column;
+
+            &__item {
+                max-width: 100%;
+                margin-bottom: 48rem;
+            }
+
+        }
+
     }
 }
