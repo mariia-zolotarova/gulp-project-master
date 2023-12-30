@@ -53,7 +53,8 @@
         .form__container {
             display: flex;
             flex-direction: column;
-            width: 540rem;
+            width: 540rem; // Change to %
+
 
             input,
             select {
