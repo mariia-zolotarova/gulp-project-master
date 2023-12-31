@@ -39,6 +39,168 @@
     }
 
 
+    .body__container {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        &__links {
+            width: 50%;
+            padding-top: 10rem;
+
+            &__icons {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                position: sticky;
+                top: 50rem;
+            }
+        }
+
+        &__info__description {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            gap: 32rem;
+
+            &-underline {
+                display: flex;
+                flex-direction: column;
+                gap: 32rem;
+
+                border-left: 2px solid var(--Gray-500);
+                padding-left: 64rem;
+
+                .underline__gray-text {
+                    color: var(--Gray-500);
+                }
+            }
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 32rem;
+
+                .list__item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 14rem;
+                }
+            }
+
+            &-tags {
+                display: flex;
+                flex-direction: row;
+                gap: 16rem;
+                border-bottom: 1rem solid var(--Gray-300);
+                margin-top: 34rem;
+                padding-bottom: 16rem;
+
+                .tags-category {
+                    color: var(--Gray-500);
+                }
+            }
+        }
+
+        &__info__reply {
+            display: flex;
+            flex-direction: column;
+            margin: 96rem 0 64rem;
+
+            &__form-inputs {
+                display: flex;
+                flex-direction: row;
+                gap: 43rem;
+
+                .inputs__item {
+                    display: flex;
+                    flex-direction: column;
+                    width: 20%;
+
+                    &__input {
+                        padding: 17rem 0 8rem 3rem;
+                        box-sizing: border-box;
+                        border: none;
+                        border-bottom: 1px solid var(--Base-Black);
+                    }
+
+                    &__label {
+                        margin-top: 50rem;
+                    }
+                }
+            }
+
+            &__form-check {
+                display: flex;
+                flex-direction: row;
+                margin: 48rem 0 48rem;
+                align-items: center;
+
+                .check-input {
+                    width: 18rem;
+                    height: 18rem;
+                }
+
+                .check-label {
+                    color: var(--Gray-500);
+                }
+            }
+
+            &__form-comment {
+                display: flex;
+                flex-direction: column;
+
+                .comment__input {
+                    padding: 17rem 0 8rem 3rem;
+                    box-sizing: border-box;
+                    border: none;
+                    border-bottom: 1px solid var(--Base-Black);
+                    width: 70%;
+                }
+            }
+
+            &__form-button {
+                margin: 24rem 0 96rem;
+            }
+        }
+
+        &__info__comments {
+            &__item {
+                display: flex;
+                flex-direction: row;
+                gap: 24rem;
+                margin-bottom: 40rem;
+
+                .item__img {
+                    width: 70rem;
+                    height: 70rem;
+                }
+
+                &__info {
+                    width: 60%;
+
+                    &-name {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 24rem;
+                    }
+
+                    &-reply {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 6rem;
+                    }
+                }
+            }
+
+            &__item:nth-child(3) {
+                margin-left: 10%;
+            }
+        }
+    }
+
 }
 
 
