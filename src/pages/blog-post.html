@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Шлях до css це відносний шлях не залежить ввід папки-->
+    <link rel="stylesheet" href="@@webRoot/bundle.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <a class="logo" href="/">
+                    <img src="@@webRoot/img/Logo.svg" alt="">
+                </a>
+                <nav class="header__nav">
+                    <a class="header__nav-link" href="/">Home</a>
+                    <a class="header__nav-link" href="@@webRoot/pages/about.html">About</a>
+                    <a class="header__nav-link" href="@@webRoot/pages/works.html">Works</a>
+                    <a class="header__nav-link header__nav-link--active" href="@@webRoot/pages/blog.html">Blog</a>
+                    <a class="header__nav-link" href="@@webRoot/pages/contact.html">Contact</a>
+
+                </nav>
+                <svg class="header__burger menu-btn" id="burger-btn" xmlns="http://www.w3.org/2000/svg" width="32"
+                    height="32" viewBox="0 0 32 32" fill="none">
+                    <line x1="4" y1="8.5" x2="28" y2="8.5" stroke="black" />
+                    <line x1="4" y1="15.5" x2="28" y2="15.5" stroke="black" />
+                    <line x1="4" y1="22.5" x2="28" y2="22.5" stroke="black" />
+                </svg>
+            </div>
+        </header>
+
+        <nav class="mobile-menu" id="mobile-menu">
+            <ul>
+                <a class="mobile-menu__nav-link" href="/">Home</a>
+                <a class="mobile-menu__nav-link" href="@@webRoot/pages/about.html">About</a>
+                <a class="mobile-menu__nav-link" href="@@webRoot/pages/works.html">Works</a>
+                <a class="mobile-menu__nav-link" href="@@webRoot/pages/blog.html">Blog</a>
+                <a class="mobile-menu__nav-link" href="@@webRoot/pages/contact.html">Contact</a>
+            </ul>
+        </nav>
+
+
+        <main class="blog-post">
+
+            <section class="hero">
+                <div class="container hero__container">
+                    <p class="Heading-H6">Technology, Interface Design</p>
+                    <h1 class="Heading-H1 hero__container__title">
+                        Using UX Design to Build a Sustainable Future</h1>
+                    <div class="hero__container__date-comment">
+                        <p class="Heading-H6">6 May, 2020</p>
+                        <p class="Heading-H6 hero__container__date-comment-date"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.2 0.773438H12.8C14.5673 0.773438 16 2.08925 16 3.71239V9.5903C16 11.2134 14.5673 12.5292 12.8 12.5292H4.8C4.15884 12.518 3.53946 12.7429 3.08 13.1538L0.68 15.358C0.606662 15.4279 0.505695 15.4676 0.4 15.4682C0.179086 15.4682 0 15.3037 0 15.1008V3.71239C0 2.08925 1.43269 0.773438 3.2 0.773438ZM14.4 3.7124C14.4 2.90083 13.6837 2.24292 12.8 2.24292H3.2C2.31635 2.24292 1.60001 2.90083 1.60001 3.7124V12.4411L1.96801 12.1325C2.71961 11.444 3.73841 11.058 4.8 11.0598H12.8C13.6837 11.0598 14.4 10.4019 14.4 9.59031V3.7124Z"
+                                    fill="#7B7B7B" />
+                            </svg>0 comments</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="image">
+                <div class="container image__container">
+                    <img src="@@webRoot/img/blog-post/blog-post-img.jpg" alt="">
+                </div>
+            </section>
+
+            <section class="writer">
+                <div class="container writer__container">
+                    <img src="@@webRoot/img/blog-post/writer.png" alt="">
+                    <p class="Heading-H6">Monica Geller</p>
+                </div>
+            </section>
+
+            <section class="body">
+                <div class="container body__container">
+                    <div class="body__container__links">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="137" viewBox="0 0 19 137"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.9003 120.781C4.9848 120.781 1 124.408 1 128.881C1 133.355 4.9848 136.981 9.9003 136.981C14.8158 136.981 18.8006 133.355 18.8006 128.881C18.8006 126.733 17.8629 124.673 16.1938 123.154C14.5246 121.635 12.2608 120.781 9.9003 120.781ZM17.0204 128.881C16.0011 128.603 14.9428 128.461 13.8786 128.46C13.2454 128.468 12.6142 128.525 11.9917 128.63C11.7692 128.136 11.5378 127.658 11.2886 127.18C12.7523 126.515 14.087 125.636 15.2403 124.58C16.3955 125.765 17.0294 127.297 17.0204 128.881ZM10.6746 126.111C11.9952 125.508 13.1979 124.712 14.2347 123.754C12.9931 122.881 11.4694 122.405 9.90026 122.401C9.32413 122.404 8.75038 122.469 8.19141 122.596C9.11973 123.706 9.95005 124.882 10.6746 126.111ZM6.89211 123.017C7.85673 124.149 8.71705 125.352 9.46431 126.613C7.901 127.169 6.23848 127.457 4.56022 127.464C4.03378 127.458 3.50797 127.429 2.98486 127.375C3.49059 125.457 4.92878 123.853 6.89211 123.017ZM2.77979 128.573V128.881C2.78391 130.48 3.43689 132.02 4.61324 133.207C5.99814 131.157 8.15598 129.637 10.6832 128.93C10.4963 128.509 10.2827 128.104 10.0691 127.699L10.0691 127.699C8.31789 128.341 6.44805 128.674 4.55984 128.679C3.96468 128.677 3.37021 128.642 2.77979 128.573ZM5.61035 134.041C6.83119 132.118 8.81573 130.695 11.1552 130.064C11.781 131.638 12.2255 133.266 12.4814 134.924C10.1807 135.747 7.57426 135.415 5.61035 134.049V134.041ZM12.4722 129.788C13.0402 131.266 13.4631 132.787 13.736 134.332C15.3702 133.382 16.5081 131.867 16.8867 130.137C15.9166 129.843 14.9009 129.692 13.8784 129.691C13.4078 129.695 12.938 129.728 12.4722 129.788Z"
+                                fill="#7B7B7B" />
+                            <path
+                                d="M18.796 42.965C18.3103 43.621 17.7232 44.1932 17.0574 44.6595C17.0574 44.8309 17.0574 45.0022 17.0574 45.1831C17.0628 48.2948 15.8351 51.2786 13.6498 53.4655C11.4644 55.6524 8.50415 56.8594 5.43257 56.8161C3.65683 56.8221 1.90382 56.4115 0.310872 55.6166C0.22498 55.5786 0.169581 55.4926 0.169907 55.3976V55.2929C0.169907 55.1562 0.279301 55.0454 0.414245 55.0454C2.15976 54.9872 3.84301 54.3744 5.22583 53.2938C3.64589 53.2616 2.22435 52.3139 1.57015 50.8568C1.53711 50.7772 1.5474 50.6859 1.5973 50.6159C1.64721 50.5459 1.72952 50.5073 1.81449 50.5141C2.29467 50.5629 2.77964 50.5177 3.24293 50.3808C1.49881 50.0142 0.188305 48.5482 0.000750257 46.7538C-0.00591569 46.6678 0.0321828 46.5844 0.101282 46.5338C0.170382 46.4833 0.260494 46.4728 0.339065 46.5063C0.807109 46.7154 1.31236 46.8256 1.82389 46.83C0.295629 45.8144 -0.364477 43.8826 0.216895 42.1273C0.276907 41.9567 0.421084 41.8307 0.596444 41.7956C0.771805 41.7605 0.952481 41.8214 1.07208 41.9559C3.13437 44.1783 5.96799 45.5026 8.97548 45.6496C8.89844 45.3383 8.86055 45.0185 8.8627 44.6976C8.89083 43.0151 9.91899 41.5164 11.4658 40.9029C13.0127 40.2895 14.7721 40.6829 15.9203 41.8988C16.703 41.7479 17.4597 41.4817 18.1663 41.1087C18.2181 41.076 18.2837 41.076 18.3355 41.1087C18.3678 41.1611 18.3678 41.2276 18.3355 41.2801C17.9932 42.0736 17.415 42.7392 16.6815 43.184C17.3239 43.1086 17.9549 42.9551 18.561 42.727C18.6121 42.6919 18.6792 42.6919 18.7302 42.727C18.773 42.7468 18.8049 42.7847 18.8176 42.8306C18.8303 42.8764 18.8224 42.9256 18.796 42.965Z"
+                                fill="#7B7B7B" />
+                            <path
+                                d="M13.398 3.23125H10.746C10.2578 3.23125 9.862 3.63419 9.862 4.13125V6.83125H13.398C13.4985 6.82898 13.5939 6.8766 13.6537 6.95894C13.7135 7.04128 13.7302 7.14806 13.6986 7.24525L13.0444 9.22525C12.9841 9.40698 12.8173 9.52983 12.6289 9.53125H9.862V16.2813C9.862 16.5298 9.66411 16.7313 9.42 16.7313H7.21C6.96589 16.7313 6.768 16.5298 6.768 16.2813V9.53125H5.442C5.19789 9.53125 5 9.32978 5 9.08125V7.28125C5 7.03272 5.19789 6.83125 5.442 6.83125H6.768V4.13125C6.768 2.14302 8.35112 0.53125 10.304 0.53125H13.398C13.6421 0.53125 13.84 0.732722 13.84 0.98125V2.78125C13.84 3.02978 13.6421 3.23125 13.398 3.23125Z"
+                                fill="#7B7B7B" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1 82.609C1 81.5564 1.89543 80.7031 3 80.7031C3.53043 80.7031 4.03914 80.9039 4.41421 81.2614C4.78929 81.6188 5 82.1036 5 82.609C5 83.6617 4.10457 84.515 3 84.515C1.89543 84.515 1 83.6617 1 82.609ZM18.5 90.6232C18.5345 88.5599 17.0574 86.7519 14.95 86.2777C13.5377 85.9879 12.0657 86.3679 11 87.2973V86.8971C11 86.6339 10.7761 86.4206 10.5 86.4206H8C7.72386 86.4206 7.5 86.6339 7.5 86.8971V96.4267C7.5 96.6898 7.72386 96.9032 8 96.9032H10.5C10.7761 96.9032 11 96.6898 11 96.4267V91.052C10.9753 90.0949 11.6752 89.2592 12.66 89.0698C13.2463 88.9734 13.8473 89.1307 14.2996 89.4991C14.752 89.8676 15.0087 90.4088 15 90.9757V96.4267C15 96.6898 15.2239 96.9032 15.5 96.9032H18C18.2761 96.9032 18.5 96.6898 18.5 96.4267V90.6232ZM5 86.8972V96.4266C5 96.6898 4.77614 96.9031 4.5 96.9031H2C1.72386 96.9031 1.5 96.6898 1.5 96.4266V86.8972C1.5 86.6341 1.72386 86.4208 2 86.4208H4.5C4.77614 86.4208 5 86.6341 5 86.8972Z"
+                                fill="#7B7B7B" />
+                        </svg>
+                    </div>
+                    <div class="body__container__info">
+                        <div class="body__container__info__description">
+                            <p class="Heading-H4">Transformation has to be driven by everybody, not just by climate
+                                groups, and we have a responsibility to use our influence to drive this. Overwhelming
+                                evidence points to the fact that we have about a decade to combat climate change caused
+                                by human activity before irreversible damage is caused. It is the biggest crisis of our
+                                generation.</p>
+                            <p class="Heading-H4">What Can UX Designers Do?</p>
+                            <p class="Heading-H4">Firstly, on a broader scale, influence is held by people who work in
+                                tech, economically, socially and politically. People follow and listen to what happens
+                                in the world of tech. We need to take advantage of this to highlight important issues
+                                and create awareness around the environmental impact of tech. </p>
+                            <div class="body__container__info__description-underline">
+                                <p class="Heading-H4">“UX designers are in a unique position to create tools with
+                                    sustainability at their heart by streamlining user workflows, minimizing information
+                                    overload, and removing potential distractions that keep users from accomplishing
+                                    tasks they set out to do.”</p>
+                                <p class="Heading-H4">‘Designing For Sustainability, Tim Frick, 2014'</p>
+                            </div>
+                            <p class="Heading-H4">Most of the Internet is unsustainable, so there is an opportunity to
+                                make a very real and lasting impact through our work. The following are some ideas for
+                                ways in which UX designers can play their part in managing this global crisis.</p>
+                            <p class="Heading-H4"> <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"
+                                    viewBox="0 0 5 5" fill="none">
+                                    <circle cx="2.5" cy="2.5" r="2.5" fill="#323232" />
+                                </svg>Ask if the product is solving a real-world problem?</p>
+                            <p class="Heading-H4"> <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"
+                                    viewBox="0 0 5 5" fill="none">
+                                    <circle cx="2.5" cy="2.5" r="2.5" fill="#323232" />
+                                </svg>Use content strategy to offer choices to customers choices.</p>
+                            <p class="Heading-H4"> <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"
+                                    viewBox="0 0 5 5" fill="none">
+                                    <circle cx="2.5" cy="2.5" r="2.5" fill="#323232" />
+                                </svg>When considering fonts, stick to two font types and reduce the typeface. </p>
+
+                            <div>
+                                <p class="Heading-H6">Tags:</p>
+                                <p class="Heading-H6">Technology, Interface Design, Visual Design:</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <section class="footer__contacts">
+                    <h2 class="Heading-H1 footer__title">Need a project?</h2>
+                    <h6 class="Heading-H6 footer__text">(239) 555-0108</h6>
+                    <h6 class="Heading-H6 footer__text">tanya.hill@example.com</h6>
+                </section>
+                <section class="footer__links">
+                    <a href="https://www.facebook.com/" class="Heading-H6 footer__link">Facebook</a>
+                    <a href="https://www.instagram.com/" class="Heading-H6 footer__link">Instagram</a>
+                    <a href="https://dribbble.com/" class="Heading-H6 footer__link">Dribbble</a>
+                    <a href="https://ua.linkedin.com/" class="Heading-H6 footer__link">Linkedin</a>
+                </section>
+                <section class="footer__copyright">
+                    <p class="Heading-H9 footer__copyright-text">© Copyright Manifest Theme. Allrights reserved</p>
+                </section>
+            </div>
+        </footer>
+    </div>
+
+
+    <!--Обовязково додавати потрібно для JS -->
+    <!-- <script> var exports = {}; </script> -->
+    <script src="@@webRoot/js/index.js"></script>
+    <script src="@@webRoot/js/header.js"></script>
+</body>
+
+</html>
