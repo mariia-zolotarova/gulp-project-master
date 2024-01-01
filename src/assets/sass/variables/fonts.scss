@@ -19,9 +19,10 @@
     --Heading-H4: 400 19rem/32rem var(--sub-font);
     --Heading-H5: 400 16rem/normal var(--sub-font);
     --Heading-H6: 400 16rem/normal var(--main-font);
+    --Heading-H7: 700 16rem/normal var(--main-font);
     --Heading-H8: 400 13rem/normal var(--sub-font);
     --Heading-H9: 400 12rem/normal var(--sub-font);
-
+    --heading-error-font: 500 140rem/normal var(--main-font);
 }
 
 .Heading-H1 {
@@ -54,6 +55,10 @@
 
 .Heading-H9 {
     font: var(--Heading-H9);
+}
+
+.heading-error-font {
+    font: var(--heading-error-font);
 }
 
 //Text
