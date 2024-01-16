@@ -27,30 +27,30 @@
             color: var(--Gray-700);
             letter-spacing: 0.95px;
 
-            &__button {
+            &-button {
                 margin-top: 45rem;
             }
         }
     }
 }
 
-@media screen and (max-width: 480px) {
-    .about-us {
-        margin: 0 16rem;
-        padding: 60rem 0;
+// @media screen and (max-width: 480px) {
+//     .about-us {
+//         margin: 0 16rem;
+//         padding: 60rem 0;
 
-        &__container {
-            display: flex;
-            flex-direction: column;
+//         &__container {
+//             display: flex;
+//             flex-direction: column;
 
-            .hero__container,
-            .description__container {
-                display: flex;
-                flex-direction: column;
+//             .hero__container,
+//             .description__container {
+//                 display: flex;
+//                 flex-direction: column;
 
-            }
+//             }
 
-        }
+//         }
 
-    }
-}
+//     }
+// }

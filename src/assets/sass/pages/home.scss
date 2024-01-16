@@ -8,7 +8,6 @@
     }
 
     .carusel {
-
         display: flex;
         gap: 32rem;
         overflow-x: scroll;
@@ -28,14 +27,15 @@
         padding: 127rem 0;
         display: flex;
         justify-content: space-between;
+        gap: 210rem;
 
         &__title {
-            max-width: 430rem;
+            width: 50%;
             font: var(--Heading-H3);
         }
 
         &__text {
-            max-width: 480rem;
+            width: 50%;
             font: var(--Heading-H4);
             color: var(--Gray-700);
             display: flex;
@@ -44,7 +44,7 @@
         }
     }
 
-    .latest-post__container {
+    .latest-post {
         padding-bottom: 127rem;
         display: flex;
         flex-direction: column;
@@ -55,7 +55,7 @@
             flex-direction: row;
             padding-bottom: 40rem;
 
-            &__more {
+            &-more {
                 text-decoration: none;
                 color: var(--Gray-500);
             }
@@ -67,60 +67,62 @@
             flex-wrap: wrap;
             gap: 35rem;
 
-            &__item {
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 24rem;
+            max-width: 350rem;
+
+            &-description {
                 display: flex;
-                flex-direction: column;
-                gap: 24rem;
-                max-width: 350rem;
+                flex-direction: row;
+                justify-content: space-between;
+                font: var(--Heading-H9);
+                color: var(--Gray-500);
+            }
 
-                &__description {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    font: var(--Heading-H9);
-                    color: var(--Gray-500);
-                }
+            &-title {
+                min-height: 60rem;
+            }
 
-                &__title {
-                    min-height: 60rem;
-                }
-
-                &__text {
-                    color: var(--Gray-500);
-                }
+            &-text {
+                color: var(--Gray-500);
             }
         }
     }
 }
 
-@media screen and (max-width: 480px) {
-    .home {
-        margin: 16px;
 
-        .hero {
-            padding: 70rem 0;
-        }
+// @media screen and (max-width: 480px) {
+//     .home {
+//         margin: 16px;
 
-        .info__container {
-            display: flex;
-            flex-direction: column;
-        }
+//         .hero {
+//             padding: 70rem 0;
+//         }
 
-        .hero__title {
-            font: var(--Heading-H2);
-        }
+//         .info__container {
+//             display: flex;
+//             flex-direction: column;
+//         }
 
-        .carusel {
-            display: flex;
-            gap: 10rem;
-        }
+//         .hero__title {
+//             font: var(--Heading-H2);
+//         }
 
-        .carusel__item {
-            max-width: 257rem;
-        }
+//         .carusel {
+//             display: flex;
+//             gap: 10rem;
+//         }
 
-        .latest-post__container__posts__item {
-            max-width: 100%;
-        }
-    }
-}
+//         .carusel__item {
+//             max-width: 257rem;
+//         }
+
+//         .latest-post__container__posts__item {
+//             max-width: 100%;
+//         }
+//     }
+// }

@@ -3,139 +3,150 @@
         padding: 127rem 0;
     }
 
-    .slide__container {
+}
+
+.slide {
+    &__container {
         display: flex;
         flex-direction: row;
         margin-bottom: 114rem;
         gap: 68rem;
+    }
 
-        &__info {
-            margin-top: 50rem;
-            max-width: 38%;
+    &__info {
+        margin-top: 50rem;
+        max-width: 38%;
 
-            &__title {
-                margin-top: 24rem;
-                margin-bottom: 16rem;
-            }
+        &-title {
+            margin-top: 24rem;
+            margin-bottom: 16rem;
+        }
 
-            &__date {
-                margin-bottom: 48rem;
-            }
+        &-date {
+            margin-bottom: 48rem;
+        }
 
-            &__description {
-                margin-bottom: 94rem;
-            }
+        &-description {
+            margin-bottom: 94rem;
+        }
+    }
 
-            &__slide__num {
-                display: flex;
-                flex-direction: row;
-                gap: 24rem;
+    &__num {
+        display: flex;
+        flex-direction: row;
+        gap: 24rem;
 
-                .num__link {
-                    text-decoration: none;
-                    color: var(--Base-Black);
+        &-link {
+            text-decoration: none;
+            color: var(--Base-Black);
 
-                    &-active {
-                        color: var(--Gray-500);
-                    }
-                }
+            &-active {
+                color: var(--Gray-500);
             }
         }
     }
 
-    .category__container {
+}
+
+.category {
+
+    &__container {
         display: flex;
         flex-direction: row;
         align-items: center;
         margin-bottom: 48rem;
-
-        &__title {
-            margin-right: 40rem;
-        }
-
-        &__select {
-            padding: 17rem 0 8rem 3rem;
-            box-sizing: border-box;
-            border: none;
-            border-bottom: 1px solid var(--Base-Black);
-            width: 37%;
-        }
     }
 
+    &__title {
+        margin-right: 40rem;
+    }
 
-    .post__container {
+    &__select {
+        padding: 17rem 0 8rem 3rem;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid var(--Base-Black);
+        width: 37%;
+    }
+}
+
+
+.post {
+    &__container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 40rem;
-
-        &__item {
-            display: flex;
-            flex-direction: column;
-            gap: 24rem;
-            max-width: 48%;
-            margin-bottom: 126rem;
-
-            &__description {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                font: var(--Heading-H9);
-                color: var(--Gray-500);
-            }
-
-            &__title {
-                min-height: 60rem;
-            }
-
-            &__text {
-                color: var(--Gray-500);
-            }
-        }
     }
 
-    .button__container {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 24rem;
+        max-width: 48%;
+        margin-bottom: 126rem;
+
+        &-description {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font: var(--Heading-H9);
+            color: var(--Gray-500);
+        }
+
+        &-title {
+            min-height: 60rem;
+        }
+
+        &-text {
+            color: var(--Gray-500);
+        }
+    }
+}
+
+.button {
+    &__container {
         display: flex;
         justify-content: center;
         margin-bottom: 128rem;
-
-        &__more {
-            text-decoration: none;
-        }
     }
 
-}
-
-
-@media screen and (max-width: 480px) {
-    .blog {
-        margin: 16rem;
-
-
-        .hero {
-            padding: 60rem 0;
-        }
-
-        .slide__container {
-            display: flex;
-            flex-direction: column;
-
-            &__info {
-                max-width: 100%;
-                margin-top: 20rem;
-            }
-        }
-
-        .post__container {
-            display: flex;
-            flex-direction: column;
-
-            &__item {
-                max-width: 100%;
-                margin-bottom: 48rem;
-            }
-
-        }
-
+    &__more-item {
+        text-decoration: none;
     }
 }
+
+
+
+// @media screen and (max-width: 480px) {
+//     .blog {
+//         margin: 16rem;
+
+
+//         .hero {
+//             padding: 60rem 0;
+//         }
+
+//         .slide__container {
+//             display: flex;
+//             flex-direction: column;
+
+//             &__info {
+//                 max-width: 100%;
+//                 margin-top: 20rem;
+//             }
+//         }
+
+//         .post__container {
+//             display: flex;
+//             flex-direction: column;
+
+//             &__item {
+//                 max-width: 100%;
+//                 margin-bottom: 48rem;
+//             }
+
+//         }
+
+//     }
+// }

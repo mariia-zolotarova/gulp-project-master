@@ -46,7 +46,7 @@
 }
 
 
-.mobile-menu {
+.mobile {
 
 
     &__nav-link {
@@ -62,10 +62,18 @@
 
 }
 
+// @media (max-width: 943) {
+//     .header {
+//         &__nav {
+//             display: none;
+//         }
+//     }
+// }
+
 @media screen and (min-width: 481px) {
 
     .header__burger,
-    .mobile-menu {
+    .mobile {
         display: none !important;
     }
 
@@ -80,7 +88,7 @@
     }
 
     .header__nav,
-    .mobile-menu {
+    .mobile {
         display: none;
     }
 
