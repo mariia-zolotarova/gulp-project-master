@@ -1,107 +1,129 @@
-.contact-us {
-    .hero {
-        padding: 127rem 0;
+.hero {
+    padding: 127rem 0;
 
-        &__container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        &__text {
-            max-width: 48%;
-            color: var(--Gray-700);
-        }
-    }
-
-    .form {
+    &__container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    &__text {
+        max-width: 48%;
+        color: var(--Gray-700);
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 128rem;
+
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        gap: 290rem;
+        width: 100%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 21rem;
+        color: var(--Gray-700);
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+        color: var(--Base-Black);
+    }
+
+    &__phone,
+    &__mail {
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        padding-bottom: 128rem;
+        margin-bottom: 70rem;
 
-        .contact__container {
+        &__icon {
+            margin: 9rem;
+        }
+    }
+
+    &__form {
+        width: 542rem;
+        // margin-right: 160rem;
+
+        &-container {
             display: flex;
             flex-direction: column;
-            gap: 21rem;
-            color: var(--Gray-700);
-
-            &__title {
-                margin-bottom: 3rem;
-                color: var(--Base-Black);
-            }
-
-            &__phone,
-            &__mail {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-
-                &__icon {
-                    margin: 9rem;
-                }
-            }
-
-            &__mail {
-                margin-bottom: 70rem;
-            }
         }
 
-        .form__container {
+        &-field {
             display: flex;
             flex-direction: column;
-            width: 540rem; // Change to %
+        }
+
+        // Change to %}
 
 
-            input,
-            select {
-                padding: 17rem 0 8rem 3rem;
-                box-sizing: border-box;
-                border: none;
-                border-bottom: 1px solid var(--Base-Black);
-            }
+        &-input,
+        &-select {
+            padding: 17rem 0 8rem 3rem;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid var(--Base-Black);
+        }
 
-            &__label,
-            &__select,
-            &__button {
-                margin-top: 50rem;
-            }
+        &-field,
+        &-select,
+        &-button {
+            margin-top: 50rem;
+        }
+
+        &-field:first-child {
+            margin-top: 0;
         }
     }
 }
 
-@media screen and (max-width: 480px) {
-    .contact-us {
-        margin: 0 16rem;
 
 
-        .hero {
-            padding: 60rem 0;
 
-            &__container {
-                display: flex;
-                flex-direction: column;
-            }
 
-            &__text {
-                max-width: 100%;
-            }
-        }
+// @media screen and (max-width: 480px) {
+//     .contact-us {
+//         margin: 0 16rem;
 
-        .form {
-            display: flex;
-            flex-direction: column;
 
-            .contact__container,
-            .form__container {
-                max-width: 100%;
-            }
+//         .hero {
+//             padding: 60rem 0;
 
-            .contact__container {
-                margin-left: 0;
-            }
-        }
+//             &__container {
+//                 display: flex;
+//                 flex-direction: column;
+//             }
 
-    }
-}
+//             &__text {
+//                 max-width: 100%;
+//             }
+//         }
+
+//         .form {
+//             display: flex;
+//             flex-direction: column;
+
+//             .contact__container,
+//             .form__container {
+//                 max-width: 100%;
+//             }
+
+//             .contact__container {
+//                 margin-left: 0;
+//             }
+//         }
+
+//     }
+// }
