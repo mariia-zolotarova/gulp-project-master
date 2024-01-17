@@ -1,15 +1,17 @@
-.hero {
-    padding: 127rem 0;
+.contact-us {
+    &__hero {
+        padding: 127rem 0;
 
-    &__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+        &-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
 
-    &__text {
-        max-width: 48%;
-        color: var(--Gray-700);
+        &-text {
+            max-width: 48%;
+            color: var(--Gray-700);
+        }
     }
 }
 

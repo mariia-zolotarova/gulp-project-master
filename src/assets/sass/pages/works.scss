@@ -2,15 +2,15 @@
     padding-top: 127rem;
     padding-bottom: 79rem;
 
-    .hero {
+    &__hero {
 
-        &__container {
+        &-container {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
 
-        &__text {
+        &-text {
             max-width: 48%;
         }
     }

@@ -1,56 +1,80 @@
 .about-us {
-    padding: 127rem 0;
 
     &__container {
+        padding: 127rem 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
+        gap: 148rem;
+    }
 
-        .hero__container {
-            &__title {
-                color: var(--Base-Black);
-                padding-bottom: 39rem;
-            }
+    &__hero {
+        width: 60%;
 
-            &__text {
-                padding-bottom: 19rem;
-            }
+        &-container {
+            display: flex;
+            flex-direction: column;
 
-            color: var(--Gray-700);
         }
 
-        .description__container {
-            max-width: 540rem;
+        &-title {
+            color: var(--Base-Black);
+            padding-bottom: 39rem;
+        }
+
+        &-text {
+            padding-bottom: 19rem;
+        }
+
+        &-img {
+            max-width: 225rem;
+        }
+
+        color: var(--Gray-700);
+    }
+
+    &__description {
+        width: 40%;
+
+        &-container {
             display: flex;
             flex-direction: column;
             gap: 30rem;
+
+        }
+
+        &-text {
             color: var(--Gray-700);
             letter-spacing: 0.95px;
+        }
 
-            &-button {
-                margin-top: 45rem;
-            }
+        &-button {
+            margin-top: 45rem;
         }
     }
+
 }
 
-// @media screen and (max-width: 480px) {
-//     .about-us {
-//         margin: 0 16rem;
-//         padding: 60rem 0;
 
-//         &__container {
-//             display: flex;
-//             flex-direction: column;
 
-//             .hero__container,
-//             .description__container {
-//                 display: flex;
-//                 flex-direction: column;
+// // @media screen and (max-width: 480px) {
+// //     .about-us {
+// //         margin: 0 16rem;
+// //         padding: 60rem 0;
 
-//             }
+// //         &__container {
+// //             display: flex;
+// //             flex-direction: column;
 
-//         }
+// //             .hero__container,
+// //             .description__container {
+// //                 display: flex;
+// //                 flex-direction: column;
 
-//     }
-// }
+// //             }
+
+// //         }
+
+// //     }
+// // }
