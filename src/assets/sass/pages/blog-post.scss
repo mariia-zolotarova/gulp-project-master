@@ -176,13 +176,13 @@
             flex-direction: column;
         }
 
-        // &-input {
-        //     padding: 17rem 0 8rem 3rem;
-        //     box-sizing: border-box;
-        //     border: none;
-        //     border-bottom: 1px solid var(--Base-Black);
-        //     width: 70%;
-        // }
+        &-input-comment {
+            padding: 17rem 0 8rem 3rem;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid var(--Base-Black);
+            width: 70%;
+        }
 
 
         &-button {
@@ -191,7 +191,7 @@
     }
 }
 
-&__info__comments {
+.comments {
     &__title {
         margin-bottom: 24rem;
     }
@@ -201,58 +201,62 @@
         flex-direction: row;
         gap: 24rem;
         margin-bottom: 40rem;
+    }
 
 
-        .item__img {
-            width: 70rem;
-            height: 70rem;
-        }
+    &__img {
+        width: 70rem;
+        height: 70rem;
+    }
 
-        &__info {
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16rem;
+        width: 60%;
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: row;
+        gap: 24rem;
+
+        .info-name__date {
             display: flex;
-            flex-direction: column;
-            gap: 16rem;
-            width: 60%;
-
-            &-name {
-                display: flex;
-                flex-direction: row;
-                gap: 24rem;
-
-                .info-name__date {
-                    display: flex;
-                    align-items: center;
-                    color: var(--Gray-500);
-                }
-            }
-
-            &-text {
-                color: var(--Gray-700);
-            }
-
-            &-reply {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 6rem;
-                color: var(--Gray-500);
-                cursor: pointer;
-            }
-        }
-
-        &__line {
-            width: 70%;
-            border-top: 1px solid var(--Gray-100);
-            margin: 40rem 0 40rem;
+            align-items: center;
+            color: var(--Gray-500);
         }
     }
+
+    &__text {
+        color: var(--Gray-700);
+    }
+
+    &__reply {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6rem;
+        color: var(--Gray-500);
+        cursor: pointer;
+    }
+
+    &__line {
+        width: 70%;
+        border-top: 1px solid var(--Gray-100);
+        margin: 40rem 0 40rem;
+    }
+
 
     &__item:nth-child(3) {
         margin-left: 10%;
         width: 85%;
     }
-
 }
+
+
+
+
 
 
 
