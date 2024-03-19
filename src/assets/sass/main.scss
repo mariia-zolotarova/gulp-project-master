@@ -1,9 +1,6 @@
     // Variables
     @import './variables/color.scss';
     @import './variables/fonts.scss';
-    @import './variables/spacing.scss';
-
-
 
     // Global
     @import './global/reset.scss';
@@ -12,16 +9,7 @@
     // Common
 
     @import './common/buttons.scss';
-    @import './common/form.scss';
-    @import './common/header.scss';
-    @import './common/footer.scss';
+
 
     // Pages
     @import './pages/home.scss';
-    @import './pages/contact-us.scss';
-    @import './pages/about-us.scss';
-    @import './pages/blog.scss';
-    @import './pages/blog-post.scss';
-    @import './pages/works.scss';
-    @import './pages/work-post.scss';
-    @import './pages/error.scss'

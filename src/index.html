@@ -6,176 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--Шлях до css це відносний шлях не залежить ввід папки-->
     <link rel="stylesheet" href="@@webRoot/bundle.min.css">
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <header class="header">
-            <div class="container header__container">
-                <a class="logo" href="/">
-                    <img src="@@webRoot/img/Logo.svg" alt="">
-                </a>
-                <nav class="header__nav">
-                    <a class="header__nav-link header__nav-link--active" href="/">Home</a>
-                    <a class="header__nav-link" href="@@webRoot/pages/about.html">About</a>
-                    <a class="header__nav-link" href="@@webRoot/pages/works.html">Works</a>
-                    <a class="header__nav-link" href="@@webRoot/pages/blog.html">Blog</a>
-                    <a class="header__nav-link" href="@@webRoot/pages/contact.html">Contact</a>
-
-                </nav>
-                <svg class="header__burger menu-btn" id="burger-btn" xmlns="http://www.w3.org/2000/svg" width="32"
-                    height="32" viewBox="0 0 32 32" fill="none">
-                    <line x1="4" y1="8.5" x2="28" y2="8.5" stroke="black" />
-                    <line x1="4" y1="15.5" x2="28" y2="15.5" stroke="black" />
-                    <line x1="4" y1="22.5" x2="28" y2="22.5" stroke="black" />
-                </svg>
-            </div>
-        </header>
-
-        <nav class="mobile" id="mobile">
-            <ul>
-                <a class="mobile__nav-link" href="/">Home</a>
-                <a class="mobile__nav-link" href="@@webRoot/pages/about.html">About</a>
-                <a class="mobile__nav-link" href="@@webRoot/pages/works.html">Works</a>
-                <a class="mobile__nav-link" href="@@webRoot/pages/blog.html">Blog</a>
-                <a class="mobile__nav-link" href="@@webRoot/pages/contact.html">Contact</a>
-            </ul>
-        </nav>
+<body>
+<div class="wrapper">
+    <header class="header"></header>
+    <div class="heading">
+        <h1>Cost accounting</h1>
+        <div class="salary__status">
+            <p class="salary__text">Your money</p>
+            <h3 class="salary__value">0</h3>
+            <p class="salary__text">UAH</p>
+        </div>
 
 
-        <main class="home">
 
-            <section class="home__hero">
-                <div class="container home__container">
-                    <h1 class="Heading-H1 home__container-title">
-                        Manifest is a newborn theme.
-                        Clean, simple and fast.</h1>
-                </div>
-            </section>
-
-            <section class="carusel">
-                <div class="carusel__item">
-                    <img class="carusel__img" src="@@webRoot/img/home-slide/slide-01.jpg" alt="">
-                    <h5 class="Heading-H6">Mixkit Inspo</h5>
-                </div>
-                <div class="carusel__item">
-                    <img class="carusel__img" src="@@webRoot/img/home-slide/slide-02.jpg" alt="">
-                    <h5 class="Heading-H6">Mixkit Inspo</h5>
-                </div>
-                <div class="carusel__item">
-                    <img class="carusel__img" src="@@webRoot/img/home-slide/slide-03.jpg" alt="">
-                    <h5 class="Heading-H6">Abalone</h5>
-                </div>
-                <div class="carusel__item">
-                    <img class="carusel__img" src="@@webRoot/img/home-slide/slide-04.jpg" alt="">
-                    <h5 class="Heading-H6">Dreamy</h5>
-                </div>
-            </section>
-
-            <section class="info">
-                <div class="container info__container">
-                    <div class="info__container-title">
-                        <h3 class="Heading-H3">Full-time UI/UX designer
-                            Head of Design at VeronaLabs.com</h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12" fill="none">
-                            <path
-                                d="M23.5303 6.53033C23.8232 6.23744 23.8232 5.76257 23.5303 5.46967L18.7574 0.696701C18.4645 0.403807 17.9896 0.403807 17.6967 0.696701C17.4038 0.989594 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM-6.55671e-08 6.75L23 6.75L23 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z"
-                                fill="#7B7B7B" />
-                        </svg>
-                    </div>
-                    <div class="info__container-text">
-                        <p class="Heading-H4">We work with clients around the world from our headquarters in Charleston,
-                            South Carolina.</p>
-                        <p class="Heading-H4">We focus on naming, branding, brand narratives, website design and
-                            development, and brand experiences.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="latest-post">
-                <div class="container latest-post__container">
-                    <div class="latest-post__heading">
-                        <h3 class="Heading-H3">Latest Posts</h3>
-                        <a class="latest-post__heading-more" href="./pages/blog.html">View All
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12"
-                                fill="none">
-                                <path
-                                    d="M23.5303 6.53033C23.8232 6.23744 23.8232 5.76257 23.5303 5.46967L18.7574 0.696701C18.4645 0.403807 17.9896 0.403807 17.6967 0.696701C17.4038 0.989594 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM-6.55671e-08 6.75L23 6.75L23 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z"
-                                    fill="#7B7B7B" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="latest-post__posts">
-                        <div class="latest-post__item">
-                            <img class="latest-post__item-img" src="@@webRoot/img/home-posts/img-11.jpg" alt="">
-                            <div class="latest-post__item-description">
-                                <p class="Heading-H9">Interface Design</p>
-                                <p class="Heading-H9">8 June, 2020</p>
-                            </div>
-                            <h3 class="Heading-H3 latest-post__item-title">UX traffic light colours
-                            </h3>
-                            <p class="Heading-H5 latest-post__item-text">UI has to make a huge visual
-                                difference between warning, an alert and
-                                a success.</p>
-                        </div>
-                        <div class="latest-post__item">
-                            <img class="latest-post__item-img" src="@@webRoot/img/home-posts/img-12.jpg" alt="">
-                            <div class="latest-post__item-description">
-                                <p class="Heading-H9">Technology</p>
-                                <p class="Heading-H9">6 May, 2020</p>
-                            </div>
-                            <h3 class="Heading-H3 latest-post__item-title">Using UX Design to Build a
-                                Sustainable Future</h3>
-                            <p class="Heading-H5 latest-post__item-text">Transformation has to be
-                                driven by everybody, not just by climate
-                                groups.</p>
-                        </div>
-                        <div class="latest-post__item">
-                            <img class="latest-post__item-img" src="@@webRoot/img/home-posts/img-13.jpg" alt="">
-                            <div class="latest-post__item-description">
-                                <p class="Heading-H9">Visual Design</p>
-                                <p class="Heading-H9">8 June, 2020</p>
-                            </div>
-                            <h3 class="Heading-H3 latest-post__item-title">Creativity vs. UX</h3>
-                            <p class="Heading-H5 latest-post__item-text">Is it possible to create a
-                                delightful user experience without
-                                following best UX practices?</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="container footer__container">
-                <section class="footer__contacts">
-                    <h2 class="Heading-H1 footer__title">Need a project?</h2>
-                    <h6 class="Heading-H6 footer__text">(239) 555-0108</h6>
-                    <h6 class="Heading-H6 footer__text">tanya.hill@example.com</h6>
-                </section>
-                <section class="footer__links">
-                    <a href="https://www.facebook.com/" class="Heading-H6 footer__link">Facebook</a>
-                    <a href="https://www.instagram.com/" class="Heading-H6 footer__link">Instagram</a>
-                    <a href="https://dribbble.com/" class="Heading-H6 footer__link">Dribbble</a>
-                    <a href="https://ua.linkedin.com/" class="Heading-H6 footer__link">Linkedin</a>
-                </section>
-                <section class="footer__copyright">
-                    <p class="Heading-H9 footer__copyright-text">© Copyright Manifest Theme. Allrights reserved</p>
-                </section>
-            </div>
-        </footer>
+        <div class="salary">
+            <button class="open-button">Add money</button>
+        </div>
     </div>
 
+    <div class="actions">
 
-    <!--Обовязково додавати потрібно для JS -->
-    <!-- <script> var exports = {
-        } </script> -->
+<!--    <section class="waist">-->
+<!--        <button class="withdraw-button">Withdraw money</button>-->
 
+<!--    </section>-->
+    </div>
+
+    <section class="categories__cards">
+
+    </section>
+
+
+    <section class="chart">
+        <div class="chartdiv" id="chartdiv" style="width: 100%; height: 500px"></div>
+    </section>
+</div>
+
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Add Money</h1>
+        <input class="salary__inp" type="text" required>
+        <button class="salary__btn">Add</button>
+        <button type="button" class="btn_cancel">Close</button>
+    </form>
+</div>
+
+<div class="form-popup" id="WithdrawForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Withdraw Money</h1>
+        <input class="waist__inp" type="text" required>
+        <button class="waist__btn">Waist</button>
+        <button type="button" class="btn_cancel_waist" >Close</button>
+    </form>
+</div>
+
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script src="@@webRoot/js/index.js"></script>
     <script src="@@webRoot/js/header.js"></script>
+
+
 
 
 </body>

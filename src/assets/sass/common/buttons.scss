@@ -1,8 +1,27 @@
-.button {
-    // max-width: 136rem;
-    padding: 8rem 36rem;
-    background-color: var(--Gray-700);
-    color: var(--Base-White);
-    width: fit-content;
+button {
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 15px 40px;
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 15px 10px;
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+.open-button{
+    background: transparent;
+    padding: 18px 40px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 50px;
     cursor: pointer;
+    font-weight: bold;
+    font-size: large;
 }

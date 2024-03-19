@@ -1,15 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 1px;
 }
 
+.container {
+    max-width: 1120rem;
+    margin: 0 auto;
+}
+
 body {
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: center;
     font: var(--text-font);
     color: var(--Base-Black);
 }
 
-// .wrapper {}
 
-.container {
-    max-width: 1120rem;
-    margin: 0 auto;
+.heading {
+    margin: 10px 10px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.categories__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.salary__add,
+.salary__status,
+.waist__add {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+.card:hover {
+    background-color: var(--green);
+}
+
+.active {
+    background-color: var(--green);
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border: 3px solid var(--dark-green);
+    background: var(--Base-White);
+    padding: 50px;
+    z-index: 9;
+    border-radius: 50px;
+
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
 }
